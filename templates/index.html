@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="/" method="post">
+		<input placeholder="Name" name="name">
+		<input placeholder="Post Content" type="" name="post">
+		<input type="submit" value="Submit">
+		{% for post in posts %}
+		<div>{{ post[1] + ':' + post[2]}}</div>
+		{% endfor %}
+	</form>
+
+</body>
+</html>
